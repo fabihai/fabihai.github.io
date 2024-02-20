@@ -1,6 +1,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(232, 216, 196, 10%);
+    margin: 50px 150px;
 }
 
 div {
@@ -10,4 +11,12 @@ div {
 
 h1 {
     color: #6D2932;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 8px;
 }
