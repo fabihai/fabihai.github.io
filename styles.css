@@ -25,3 +25,9 @@ p {
 img {
     width: 350px;
 }
+
+#code {
+    margin: 0;
+    text-align: left;
+    background-color: rgba(232, 216, 196, 50%);
+}
