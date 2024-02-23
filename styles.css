@@ -1,11 +1,16 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(232, 216, 196, 10%);
-    margin: 50px 150px;
+    /* margin: 50px 300px; */
+    max-width: 700px;
+    text-align: center;
+    /* display: flex; */
+    margin: 0 auto;
+    padding: 0;
 }
 
 div {
-    text-align: center;
+    text-align: left;
     margin: 50px;
 }
 
@@ -13,7 +18,7 @@ h1 {
     color: #6D2932;
 }
 
-h3 {
+h2 {
     margin-bottom: 0px;
     color: #6D2932;
 }
@@ -28,10 +33,20 @@ img {
 
 #code {
     margin: 0;
+    padding: 0;
     text-align: left;
     background-color: rgba(232, 216, 196, 50%);
 }
 
 .inline {
     display: inline;
+}
+
+.caption {
+    margin: 0px;
+}
+
+pre {
+    overflow: scroll;
+    margin: 0;
 }
