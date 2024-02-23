@@ -31,3 +31,7 @@ img {
     text-align: left;
     background-color: rgba(232, 216, 196, 50%);
 }
+
+.inline {
+    display: inline;
+}
