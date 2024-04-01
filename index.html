@@ -6,71 +6,105 @@
         <title>Fabiha's Portfolio</title>
     </head>
     <body>
-        <div>
-            <h1>"If I Must Die"</h1>
-            <p>COMS BC3930 Creative Embedded Systems - Module 1</p>
-        </div>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/85yTASQBNr8?si=lagV1qASt4tz9Hec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BdbYyanjtaQ?si=-u-eJ6bmEv_RultJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-        </div>
-        <div>
-            <h2>Inspiration</h2>
-            <p>Over the past few months, much of the worlds attention has been focused on what is currently happening in Palestine and Israel. This project is a response to this, specifically in the context of the tense atmosphere present in Barnard College and Columbia University's campuses. In an atmosphere where voices are being suppressed, it is meant to spread awareness in an open space for students through simple, yet moving art. "If I Must Die" aims to emphasize key parts of the poem and to allow the audience to feel as though they are hearing the words on the screen at the timing that they appear. The poem "If I Must Die" was written by the late Palestinian poet and professor, Refaat Alareer, who was martyred in an Israeli airstrike on December 7, 2023.
-            </p>
-
-            <h2>Technical Aspect</h2>
-            <p>This was made on an ESP32. The full code used for this project can be found on my GitHub <a href="https://github.com/fabihai/if-i-must-die/tree/main">here</a>.</p>
-            <p>Since first reading the poem, different parts have struck me as very meaningful, so I wanted to emphasize these parts in the installation. To do this, I experimented with the timing of the words, their placement on the screen, color, and moving words across the screen.
-            </p>
-            <p>The trickiest part to implement was the word "above" moving up the screen like a kite. To do this, I had to play around with the timing of the word to make it appear and disappear quick enough to give the effect of motion. Additionally, I had to experiment with the x and y position on the display screen to ensure that it seemed to fly above the correct word.
-            </p>
-            <div id="code">
-                <pre>
-                    <code>
-        tft.drawString("sees the kite, ",0,0,4);
-
-        delay(500);
-
-        tft.drawString(" my kite you made,",30,26,4);
-        delay(500);
-        tft.drawString("flying up above",10,78,4);
-        delay(500);
-        tft.drawString("                                          ",10,78,4);
-        tft.drawString("flying up ",10,78,4);
-        delay(50);
-        tft.drawString("above", 115, 70, 4);
-        delay(500);
-        tft.drawString("                                         ",115,70,4);
-        tft.drawString("above", 115, 62, 4);
-        delay(500);
-        tft.drawString("                                         ",115,62,4);
-        tft.drawString("above", 115, 56, 4);
-        delay(500);
-        tft.drawString("                                         ",115,56,4);
-        tft.drawString("above", 115, 48, 4);
-        delay(WAIT);
-                    </code>
-                </pre>  
+        <div class ="module2">
+            <div class="heading">
+                <h1>Watermelon Pop</h1>
+                <p>COMS BC3930 Creative Embedded Systems - Module 2</p>
             </div>
+            <div class="links">
+                <p>Demo video will be posted shortly!</p>
+            </div>
+            <div class="post">
+                <h2>Inspiration</h2>
+                <p>I wanted to make a simple game where the user has to go around obstacles to reach a goal. Here the goal is to achieve as high of a goal as possible. Watermelon are one of my favorite fruits for many reasons so I thought it would be fun to create a game where instead of a person spitting watermelon seeds, it would be the watermelon itself shooting seeds to pop balloons, hence the name "Watermelon Pop".
+                </p>
+                
+                <h2>Technical Aspect</h2>
+                <p>This was made on an ESP32. The full code can be found on my GitHub <a href="https://github.com/fabihai/watermelon-pop">here</a></p>
+                <p>For the hardware, two buttons and a potentiometer were used, which control wther the game can be reset, the seed attacks, and moving the watermelon up and down the screen.</p>
+                <p>I used PyGame to run the visual game part of this project. I used Serial to handle communication between Arduino and the laptop. The images on the screen are all sprites that are created automatically as the game continues (the Watermelon and the Balloons), or as a result of user actions (the Seeds). Sprite functions are handled in their respective classes: Player(), Balloon(), Seed(), and Score().</p>
+                
+                <h2>Gameplay</h2>
+                <p>The game itself is pretty straightforward. The user uses the potentiometer to move up and down the screen. One button handles resetting the game and another fires seeds at the balloons. For each balloon that the player pops with the seeds, the user gains 10 points. If the watermelon collides with a balloon, the player loses 10 points. Certain balloons are randomly generated to be worth +30 or -30 points. If a seed hits any of these balloons, they will gain or lose 30 points accordingly instead of the usual 10 points. Pressing the reset button will reset the score, and delete all sprites from the screen except for the watermelon.</p>
+                
+                <h2>Enclosure</h2>
+                <p>I wanted to make this seem like an arcade game so opted for a shape that looks like a mini arcade machine. In arcades, the machines are usually very colorful and are covered with symbols from the game, which I wanted to reflect in this game. So I filled the space with as many many watermelon colors and symbols in the game that I could.</p>
+                <img src="/pictures/making enclosure.jpg" alt="Enclosure pieces cut out">
+                <figcaption>The enclosure pieces all cut out and ready to be put together.</figcaption>
 
-            <h2>Installation</h2>
-            <p>This project was meant for an installation that was to last for a few hours in the 5th floor of Milstein Library. We had to attach batteries to the ESP32's. We used heatshrink on the connector wires to prevent the red and black ones from touching each other, and then connected them to the battery and the ESP32. After being connected to the batteries, the ESP32 and connected battery were placed in an envelope (which we decorated to match the theme of each project) and hung from an air vent next to a window overlooking Barnard and Columbia's campus.</p>
-            
-            <div class="inline">
-                <div>
-                    <img src="/pictures/boardandbattery.jpg" alt="board and battery">
-                    <div class="caption">The battery (with heatshrink on the connector wire) and board ready to go for the installation.</div>
+                <img src="/pictures/enclosure glued.jpg" alt="Enclosure pieces all glued together">
+                <figcaption>The enclosure pieces all glued together and ready to be colored.</figcaption>
+                
+                <img src="/pictures/final enclosure.jpg" alt="Final enclosure that is colored.">
+                <figcaption>Final colored enclosure</figcaption>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="module1">
+            <div class="heading">
+                <h1>"If I Must Die"</h1>
+                <p>COMS BC3930 Creative Embedded Systems - Module 1</p>
+            </div>
+            <div class="links">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/85yTASQBNr8?si=lagV1qASt4tz9Hec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BdbYyanjtaQ?si=-u-eJ6bmEv_RultJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+            <div class="post">
+                <h2>Inspiration</h2>
+                <p>Over the past few months, much of the worlds attention has been focused on what is currently happening in Palestine and Israel. This project is a response to this, specifically in the context of the tense atmosphere present in Barnard College and Columbia University's campuses. In an atmosphere where voices are being suppressed, it is meant to spread awareness in an open space for students through simple, yet moving art. "If I Must Die" aims to emphasize key parts of the poem and to allow the audience to feel as though they are hearing the words on the screen at the timing that they appear. The poem "If I Must Die" was written by the late Palestinian poet and professor, Refaat Alareer, who was martyred in an Israeli airstrike on December 7, 2023.
+                </p>
+
+                <h2>Technical Aspect</h2>
+                <p>This was made on an ESP32. The full code used for this project can be found on my GitHub <a href="https://github.com/fabihai/if-i-must-die/tree/main">here</a>.</p>
+                <p>Since first reading the poem, different parts have struck me as very meaningful, so I wanted to emphasize these parts in the installation. To do this, I experimented with the timing of the words, their placement on the screen, color, and moving words across the screen.
+                </p>
+                <p>The trickiest part to implement was the word "above" moving up the screen like a kite. To do this, I had to play around with the timing of the word to make it appear and disappear quick enough to give the effect of motion. Additionally, I had to experiment with the x and y position on the display screen to ensure that it seemed to fly above the correct word.
+                </p>
+                <div id="code">
+                    <pre>
+                        <code>
+            tft.drawString("sees the kite, ",0,0,4);
+
+            delay(500);
+
+            tft.drawString(" my kite you made,",30,26,4);
+            delay(500);
+            tft.drawString("flying up above",10,78,4);
+            delay(500);
+            tft.drawString("                                          ",10,78,4);
+            tft.drawString("flying up ",10,78,4);
+            delay(50);
+            tft.drawString("above", 115, 70, 4);
+            delay(500);
+            tft.drawString("                                         ",115,70,4);
+            tft.drawString("above", 115, 62, 4);
+            delay(500);
+            tft.drawString("                                         ",115,62,4);
+            tft.drawString("above", 115, 56, 4);
+            delay(500);
+            tft.drawString("                                         ",115,56,4);
+            tft.drawString("above", 115, 48, 4);
+            delay(WAIT);
+                        </code>
+                    </pre>  
                 </div>
-                <div>
-                    <img src="/pictures/OnDisplay.jpg" alt="Board on display">
-                    <div class="caption">The board in its envelope on display.</div>
+
+                <h2>Installation</h2>
+                <p>This project was meant for an installation that was to last for a few hours in the 5th floor of Milstein Library. We had to attach batteries to the ESP32's. We used heatshrink on the connector wires to prevent the red and black ones from touching each other, and then connected them to the battery and the ESP32. After being connected to the batteries, the ESP32 and connected battery were placed in an envelope (which we decorated to match the theme of each project) and hung from an air vent next to a window overlooking Barnard and Columbia's campus.</p>
+                
+                <div class="inline">
+                    <div>
+                        <img src="/pictures/boardandbattery.jpg" alt="board and battery">
+                        <div class="caption">The battery (with heatshrink on the connector wire) and board ready to go for the installation.</div>
+                    </div>
+                    <div>
+                        <img src="/pictures/OnDisplay.jpg" alt="Board on display">
+                        <div class="caption">The board in its envelope on display.</div>
+                    </div>
                 </div>
             </div>
-            <!-- <div>
-                <img src="/pictures/ifimustdie.jpg" alt="Poem on display">
-                <img src="/pictures/refaatalareer.jpg" alt="Poem ondisplay (Author's name)">
-            </div> -->
         </div>
     </body>
 </html>
