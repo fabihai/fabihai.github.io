@@ -2,7 +2,7 @@ function About() {
     return (
         <div className="about" id="about">
             <div className="column col-3 d-flex align-items-center">
-                <img className="object-fit-cover ratio ratio-1x1 overflow-hidden rounded-circle border w-100" src="../../pictures/headshot.jpg"/>
+                <img className="object-fit-cover ratio ratio-1x1 overflow-hidden rounded-circle border w-100" src="../../headshot.jpg"/>
             </div>
             <div className="column col-6">
                 <h1>Hi! I'm Fabiha.</h1>
