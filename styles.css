@@ -1,26 +1,28 @@
+:root {
+    scroll-padding-top: 100px;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(232, 216, 196, 10%);
     /* margin: 50px 300px; */
-    max-width: 800px;
+    /* max-width: 1200px; */
     text-align: center;
     /* display: flex; */
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
+    padding: 50px;
 }
 
 div {
     text-align: left;
-    margin: 50px;
 }
 
 h1 {
-    color: #6D2932;
+    color: #000000;
 }
 
 h2 {
     margin-bottom: 0px;
-    color: #6D2932;
 }
 
 p {
@@ -49,4 +51,40 @@ img {
 pre {
     overflow: scroll;
     margin: 0;
+}
+
+.navbar {
+    background-color: #B6CEB4;
+    position: fixed;
+    top: 0;
+}
+
+.content {
+    padding-top: 50px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link-container {
+    display: flex;
+    justify-content: right;
+}
+
+.link {
+    text-decoration: underline;
+
+}
+
+.link:hover {
+    text-decoration: none;
 }

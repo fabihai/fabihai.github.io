@@ -1,0 +1,13 @@
+/* .attachment {
+    width: 100%;
+    height: 100%;
+} */
+
+.card {
+    /* padding: 20px; */
+    /* display: flex;
+    flex-direction: column; */
+    /* Ensures the card itself takes up the full height of its grid cell */
+    height: 100%;
+    padding: 1rem;
+}
