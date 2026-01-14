@@ -20,7 +20,7 @@ const cards = [
         title: "Evolutionary Lunar Lander",
         tools: "Python",
         visual: "../../lander.png",
-        link: "../../SRI-poster.pdf",
+        link: "../../SRI-Poster.pdf",
         linktext: "Poster"
     },
     {
