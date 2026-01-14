@@ -57,11 +57,11 @@ const Module1 = () => {
                 
                 <div className="inline">
                     <div>
-                        <img src="/pictures/boardandbattery.jpg" alt="board and battery" />
+                        <img src="/ces-pictures/boardandbattery.jpg" alt="board and battery" />
                         <div className="caption">The battery (with heatshrink on the connector wire) and board ready to go for the installation.</div>
                     </div>
                     <div>
-                        <img src="/pictures/OnDisplay.jpg" alt="Board on display" />
+                        <img src="/ces-pictures/OnDisplay.jpg" alt="Board on display" />
                         <div className="caption">The board in its envelope on display.</div>
                     </div>
                 </div>

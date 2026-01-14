@@ -42,14 +42,14 @@ const cards = [
     {
         key: 6,title: "Watermelon Pop",
         tools: "Python, C++, ESP32",
-        visual: "../../pictures/finalenclosure.jpg",
-        link: "../ces/module2",
+        visual: "../../ces-pictures/finalenclosure.jpg",
+        link: "https://github.com/fabihai/watermelon-pop/blob/main/README.md",
         linktext: "Documentation"
     },
     {
         title: "If I Must Die",
         tools: "C++, ESP32",
-        visual: "../../pictures/ifimustdie.jpg",
+        visual: "https://github.com/fabihai/if-i-must-die/blob/main/README.md",
         link: "../ces/module1",
         linktext: "Documentation"
     }

@@ -26,13 +26,13 @@ const Module2 = () => {
                 
                 <h2>Enclosure</h2>
                 <p>I wanted to make this seem like an arcade game so opted for a shape that looks like a mini arcade machine. In arcades, the machines are usually very colorful and are covered with symbols from the game, which I wanted to reflect in this game. So I filled the space with as many many watermelon colors and symbols in the game that I could.</p>
-                <img src="/pictures/makingenclosure.jpg" alt="Enclosure pieces cut out" />
+                <img src="/ces-pictures/makingenclosure.jpg" alt="Enclosure pieces cut out" />
                 <figcaption>The enclosure pieces all cut out and ready to be put together.</figcaption>
 
-                <img src="/pictures/enclosureglued.jpg" alt="Enclosure pieces all glued together" />
+                <img src="/ces-pictures/enclosureglued.jpg" alt="Enclosure pieces all glued together" />
                 <figcaption>The enclosure pieces all glued together and ready to be colored.</figcaption>
                 
-                <img src="/pictures/finalenclosure.jpg" alt="Final enclosure that is colored." />
+                <img src="/ces-pictures/finalenclosure.jpg" alt="Final enclosure that is colored." />
                 <figcaption>Final colored enclosure</figcaption>
             </div>
         </div>
