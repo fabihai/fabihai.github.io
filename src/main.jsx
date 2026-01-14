@@ -16,6 +16,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/ces/module2" element={<Module2/>} />
           <Route path="/ces/module1" element={<Module1/>} />
           <Route path="/Fabiha_Islam_Resume.pdf" />
+          <Route path="/SRI-Poster.pdf" />
         </Route>
       </Routes>
     </BrowserRouter>
