@@ -13,8 +13,9 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<App />} />
-          <Route path="ces/module2" element={<Module2/>} />
-          <Route path="ces/module1" element={<Module1/>} />
+          <Route path="/ces/module2" element={<Module2/>} />
+          <Route path="/ces/module1" element={<Module1/>} />
+          <Route path="/Fabiha_Islam_Resume.pdf" />
         </Route>
       </Routes>
     </BrowserRouter>

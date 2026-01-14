@@ -49,8 +49,8 @@ const cards = [
     {
         title: "If I Must Die",
         tools: "C++, ESP32",
-        visual: "https://github.com/fabihai/if-i-must-die/blob/main/README.md",
-        link: "../ces/module1",
+        visual: "../../ces-pictures/ifimustdie.jpg",
+        link: "https://github.com/fabihai/if-i-must-die/blob/main/README.md",
         linktext: "Documentation"
     }
 ];
